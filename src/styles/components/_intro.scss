@@ -1,0 +1,76 @@
+.intro {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding-left: 8rem;
+  width: 100vw;
+  position: relative;
+
+  .intro-text {
+    color: $main-text;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Teko";
+    font-size: 15rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1em;
+    text-transform: uppercase;
+    overflow: hidden;
+  }
+
+  img {
+    background-position: center;
+    left: 0;
+    min-height: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .description {
+    color: $main-text;
+
+    h2 {
+      font-size: 2.4rem;
+    }
+  }
+
+  .description-text {
+    font-weight: 700;
+    color: $red;
+    border-bottom: 1px solid $red;
+  }
+
+  ////////////////////media queries
+  @media (max-width: 1200px) {
+    padding-left: 4rem;
+
+    .intro-text {
+      font-size: 10rem;
+    }
+
+    .description {
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    padding-left: 2rem;
+    .intro-text {
+      font-size: 4rem !important;
+    }
+
+    .description {
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
