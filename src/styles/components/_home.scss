@@ -43,7 +43,7 @@
   font-weight: 700;
   border-radius: 0.5rem;
   box-shadow: #e9322f66 0px 2px 4px;
-  transition: box-shadow, darken 0.2s ease-in-out;
+  transition: box-shadow 0.2s, color 0.2s ease-in-out;
   margin-top: 5rem;
 
   &:hover {

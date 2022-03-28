@@ -69,7 +69,9 @@ const Home = () => {
 
           <motion.a
             className="btn"
-            href="/public/resumeEn.pdf"
+            href={`/public/${
+              language === "en" ? "resumeEn.pdf" : "resumeEs.pdf"
+            }`}
             target="_blank"
             initial={{ opacity: 0, translateX: -500 }}
             animate={{ opacity: 1, translateX: 0 }}
