@@ -22,7 +22,7 @@ const Description = () => {
       ];
     } else {
       description = [
-        "Desarrollador Frontend",
+        "Desarrollador Frontend React",
         "Diseñador",
         "Freelancer",
         "Entusiasta",
@@ -53,7 +53,7 @@ const Description = () => {
       className="description"
       initial={{ opacity: 0, translateX: -2000 }}
       animate={{ opacity: 1, translateX: 0 }}
-      transition={{ duration: 2 }}
+      transition={{ type: "spring", duration: 2 }}
     >
       <h2>
         {primeraFrase} <span className="description-text" ref={el}></span>{" "}

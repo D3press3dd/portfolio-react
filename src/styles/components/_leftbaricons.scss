@@ -1,0 +1,90 @@
+.icons {
+  color: $main-text;
+  height: 2.5rem;
+  transition: color 0.3s ease-in-out;
+  width: 2.5rem;
+
+  &:hover {
+    color: $red;
+  }
+}
+
+.icons-container {
+  width: 4rem;
+  position: fixed;
+  bottom: 0;
+  left: 3rem;
+  z-index: 10;
+
+  li:last-of-type {
+    margin-bottom: 2rem;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: $main-text;
+  }
+}
+
+.icons-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+
+  li {
+    transition: transform 0.5s ease;
+
+    &:hover {
+      transition: transform 0.5s ease;
+
+      transform: translateY(-0.4rem);
+    }
+  }
+}
+
+.email {
+  -webkit-box-align: center;
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  gap: 2rem;
+  position: fixed;
+  right: 4rem;
+
+  &::after {
+    content: "";
+    display: block;
+
+    width: 1px;
+    height: 90px;
+    background-color: $main-text;
+  }
+  a {
+    margin-bottom: 2rem;
+    -webkit-writing-mode: vertical-rl;
+    text-decoration: none;
+    writing-mode: vertical-rl;
+
+    &:link,
+    &:visited {
+      transition: transform 0.5s, color 0.5s ease;
+      color: $main-text;
+      text-decoration: none;
+    }
+
+    &:hover,
+    &:active {
+      color: $red;
+      transform: translateY(-0.4rem);
+    }
+  }
+}

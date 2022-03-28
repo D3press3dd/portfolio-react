@@ -13,7 +13,7 @@ const LanguageButton = () => {
       className="language-container"
       initial={{ opacity: 0, translateX: 100 }}
       animate={{ opacity: 1, translateX: 0 }}
-      transition={{ duration: 2 }}
+      transition={{ type: "spring", duration: 2 }}
     >
       <a>
         <img

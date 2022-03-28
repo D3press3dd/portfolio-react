@@ -10,6 +10,9 @@
 
 html {
   font-size: 62.5%;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -20,5 +23,47 @@ img {
 body {
   font-family: "Roboto Condensed", "Teko", sans-serif;
   background-color: $background-color;
-  overflow: hidden;
+  // overflow: hidden;
+  color: $main-text;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: $red $background-color;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: $background-color;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $red;
+  border-radius: 10px;
+  border: 3px solid $background-color;
+}
+
+::-moz-selection {
+  color: $background-color;
+  background: $red;
+}
+::selection {
+  color: $background-color;
+  background: $red;
+}
+
+/* dibuja el texto seleccionado en un parrafo de color blanco y negro*/
+p::-moz-selection {
+  color: $background-color;
+  background: $red;
+}
+p::selection {
+  color: $background-color;
+  background: $red;
 }

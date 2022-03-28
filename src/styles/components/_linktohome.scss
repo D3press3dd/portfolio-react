@@ -15,6 +15,7 @@
 
   &:hover {
     box-shadow: #e9322f66 0px 7px 13px -3px, #e9322f33 0px -3px 0px inset;
+    color: darken($color: $red, $amount: 20);
   }
 }
 ////////////////////////

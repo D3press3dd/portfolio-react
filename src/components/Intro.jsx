@@ -1,10 +1,13 @@
-import { motion } from "framer-motion";
 import useLanguages from "../context/LanguageContext";
 import { data } from "../data";
 import Background from "../img/background.jpg";
 import Description from "./Description";
 import LanguageButton from "./LanguageButton";
 import LinkToHome from "./LinkToHome";
+import { motion } from "framer-motion";
+
+// import { idGenerator } from "../helpers/idGenerator";
+
 const Intro = () => {
   const { language } = useLanguages();
   return (
@@ -15,6 +18,7 @@ const Intro = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 4 }}
+        exit={{ opacity: 0 }}
       >
         <img src={Background} alt="background image" />
         <motion.div className="intro-text">
@@ -22,9 +26,9 @@ const Intro = () => {
             ? data.saludoEn
             : data.saludoEs.map((letra, index) => (
                 <motion.p
-                  className="intro-text-letter"
+                  className="intro-text"
                   key={letra + index}
-                  initial={{ opacity: 0, translateY: 100 }}
+                  initial={{ opacity: 0, translateY: 150 }}
                   animate={{ opacity: 1, translateY: 0 }}
                   transition={{ delay: index * 0.02, duration: 0.5 }}
                 >
@@ -37,11 +41,11 @@ const Intro = () => {
             ? data.saludoEnSecond
             : data.saludoEsSecond.map((letra, index) => (
                 <motion.p
-                  className=""
+                  className="intro-text"
                   key={letra + index}
-                  initial={{ opacity: 0, translateY: 100 }}
+                  initial={{ opacity: 0, translateY: 150 }}
                   animate={{ opacity: 1, translateY: 0 }}
-                  transition={{ delay: index * 0.02, duration: 0.7 }}
+                  transition={{ delay: index * 0.02, duration: 0.5 }}
                 >
                   {letra}
                 </motion.p>
