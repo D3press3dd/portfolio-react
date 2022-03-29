@@ -18,7 +18,7 @@
   font-size: 1.6rem;
   font-family: "Roboto Condensed", "Teko", sans-serif;
   font-weight: 500;
-  margin: 0 0 3rem 0;
+  margin: 0 0 1rem 0;
 }
 
 .information__name {
@@ -29,6 +29,7 @@
 }
 
 .information__paragraph {
+  margin-top: 4rem;
   font-size: 1.6rem;
   max-width: 62rem;
   line-height: 1.3;
@@ -86,8 +87,50 @@
 }
 ////////////////////////
 
+@media (max-width: 830px) {
+  .information__name {
+    font-size: 4rem;
+  }
+
+  .information__paragraph {
+    font-size: 1.2rem;
+  }
+
+  .home {
+    padding: 0 10rem;
+  }
+
+  .btn {
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
 @media (max-width: 640px) {
   .btn {
     font-size: 1.8rem;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+
+  .home {
+    padding: 0 7rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .information__name {
+    font-size: 2rem;
+  }
+
+  .information__paragraph,
+  .information__description {
+    font-size: 1.2rem;
+  }
+
+  .home {
+    padding: 0 6rem;
   }
 }

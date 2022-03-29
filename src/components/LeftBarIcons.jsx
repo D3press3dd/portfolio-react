@@ -2,12 +2,26 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FiGithub, FiCodepen } from "react-icons/fi";
 import { SiCodewars, SiFreelancer } from "react-icons/si";
 import { IconContext } from "react-icons";
+import { motion } from "framer-motion";
 const LeftBarIcons = () => {
   return (
     <IconContext.Provider value={{ className: "icons" }}>
-      <div className="icons-container">
+      <motion.div
+        className="icons-container"
+        initial={{ opacity: 0, translateX: -100 }}
+        animate={{ opacity: 1, translateX: 0 }}
+        transition={{ type: "spring", duration: 2 }}
+      >
         <ul className="icons-list">
-          <li>
+          <motion.li
+            initial={{ opacity: 0, translateX: -100 }}
+            animate={{ opacity: 1, translateX: 0 }}
+            transition={{
+              type: "spring",
+              duration: 0.3,
+              delay: 0.3,
+            }}
+          >
             {" "}
             <a
               href="https://www.codewars.com/users/D3press3dd"
@@ -16,9 +30,13 @@ const LeftBarIcons = () => {
             >
               <SiCodewars />
             </a>{" "}
-          </li>
+          </motion.li>
 
-          <li>
+          <motion.li
+            initial={{ opacity: 0, translateX: -100 }}
+            animate={{ opacity: 1, translateX: 0 }}
+            transition={{ type: "spring", duration: 0.3, delay: 0.4 }}
+          >
             {" "}
             <a
               href="https://github.com/D3press3dd"
@@ -27,9 +45,13 @@ const LeftBarIcons = () => {
             >
               <FiGithub />{" "}
             </a>{" "}
-          </li>
+          </motion.li>
 
-          <li>
+          <motion.li
+            initial={{ opacity: 0, translateX: -100 }}
+            animate={{ opacity: 1, translateX: 0 }}
+            transition={{ type: "spring", duration: 0.3, delay: 0.5 }}
+          >
             {" "}
             <a
               href="https://www.linkedin.com/in/anthonyrosman/"
@@ -38,9 +60,13 @@ const LeftBarIcons = () => {
             >
               <FaLinkedinIn />
             </a>{" "}
-          </li>
+          </motion.li>
 
-          <li>
+          <motion.li
+            initial={{ opacity: 0, translateX: -100 }}
+            animate={{ opacity: 1, translateX: 0 }}
+            transition={{ type: "spring", duration: 0.3, delay: 0.6 }}
+          >
             {" "}
             <a
               href="https://www.freelancer.com/u/Anthonyrosman20"
@@ -49,9 +75,13 @@ const LeftBarIcons = () => {
             >
               <SiFreelancer />
             </a>{" "}
-          </li>
+          </motion.li>
 
-          <li>
+          <motion.li
+            initial={{ opacity: 0, translateX: -100 }}
+            animate={{ opacity: 1, translateX: 0 }}
+            transition={{ type: "spring", duration: 0.3, delay: 0.7 }}
+          >
             {" "}
             <a
               href="https://codepen.io/d3press3dd"
@@ -60,9 +90,9 @@ const LeftBarIcons = () => {
             >
               <FiCodepen />
             </a>{" "}
-          </li>
+          </motion.li>
         </ul>
-      </div>
+      </motion.div>
     </IconContext.Provider>
   );
 };

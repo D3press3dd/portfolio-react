@@ -88,3 +88,13 @@
     }
   }
 }
+
+@media (max-width: 640px) {
+  .icons-container {
+    left: 1rem;
+  }
+
+  .email {
+    right: 1rem;
+  }
+}

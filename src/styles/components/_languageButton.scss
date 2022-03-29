@@ -4,7 +4,7 @@ $extra: calc(#{$pad} * 1.2);
 $color: $red;
 
 .language-container {
-  position: absolute;
+  position: fixed;
   top: 1%;
   right: 1%;
   z-index: 1;
