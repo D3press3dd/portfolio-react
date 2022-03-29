@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <div>Quizas ponga un nav luego</div>
-      <main className="home">
+      <main className="home" id="home">
         <section className="information-container">
           <motion.h1
             className="information__description"

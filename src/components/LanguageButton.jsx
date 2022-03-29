@@ -19,6 +19,7 @@ const LanguageButton = () => {
         <img
           src={language === "en" ? spainFlag : usaFlag}
           className="text flag"
+          alt={language === "en" ? "spain flag" : "Usa flag"}
         ></img>
         <span className="line -right"></span>
         <span className="line -top"></span>

@@ -6,8 +6,6 @@ import LanguageButton from "./LanguageButton";
 import LinkToHome from "./LinkToHome";
 import { motion } from "framer-motion";
 
-// import { idGenerator } from "../helpers/idGenerator";
-
 const Intro = () => {
   const { language } = useLanguages();
   return (
@@ -18,7 +16,7 @@ const Intro = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 4 }}
-        exit={{ opacity: 0 }}
+        exit={{ opacity: 0, transition: { duration: 1 } }}
       >
         <img src={Background} alt="background image" />
         <motion.div className="intro-text">
@@ -53,6 +51,7 @@ const Intro = () => {
         </motion.div>
         <Description />
       </motion.div>
+
       <LinkToHome />
     </>
   );
