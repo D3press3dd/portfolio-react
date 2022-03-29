@@ -33,9 +33,9 @@ const Description = () => {
       // Strings to display
       // Speed settings, try diffrent values untill you get good results
       startDelay: 300,
-      typeSpeed: 50,
-      backSpeed: 50,
-      backDelay: 2000,
+      typeSpeed: 20,
+      backSpeed: 20,
+      backDelay: 1500,
       smartBackspace: true,
       loop: true,
       showCursor: true,
