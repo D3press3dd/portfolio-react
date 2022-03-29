@@ -8,16 +8,15 @@ const LeftBarIcons = () => {
     <IconContext.Provider value={{ className: "icons" }}>
       <motion.div
         className="icons-container"
-        initial={{ opacity: 0, translateX: -100 }}
-        animate={{ opacity: 1, translateX: 0 }}
-        transition={{ type: "spring", duration: 2 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
       >
         <ul className="icons-list">
           <motion.li
             initial={{ opacity: 0, translateX: -100 }}
             animate={{ opacity: 1, translateX: 0 }}
             transition={{
-              type: "spring",
               duration: 0.3,
               delay: 0.3,
             }}
@@ -35,7 +34,7 @@ const LeftBarIcons = () => {
           <motion.li
             initial={{ opacity: 0, translateX: -100 }}
             animate={{ opacity: 1, translateX: 0 }}
-            transition={{ type: "spring", duration: 0.3, delay: 0.4 }}
+            transition={{ duration: 0.3, delay: 0.4 }}
           >
             {" "}
             <a
@@ -50,7 +49,7 @@ const LeftBarIcons = () => {
           <motion.li
             initial={{ opacity: 0, translateX: -100 }}
             animate={{ opacity: 1, translateX: 0 }}
-            transition={{ type: "spring", duration: 0.3, delay: 0.5 }}
+            transition={{ duration: 0.3, delay: 0.5 }}
           >
             {" "}
             <a
@@ -65,7 +64,7 @@ const LeftBarIcons = () => {
           <motion.li
             initial={{ opacity: 0, translateX: -100 }}
             animate={{ opacity: 1, translateX: 0 }}
-            transition={{ type: "spring", duration: 0.3, delay: 0.6 }}
+            transition={{ duration: 0.3, delay: 0.6 }}
           >
             {" "}
             <a
@@ -80,7 +79,7 @@ const LeftBarIcons = () => {
           <motion.li
             initial={{ opacity: 0, translateX: -100 }}
             animate={{ opacity: 1, translateX: 0 }}
-            transition={{ type: "spring", duration: 0.3, delay: 0.7 }}
+            transition={{ duration: 0.3, delay: 0.7 }}
           >
             {" "}
             <a
