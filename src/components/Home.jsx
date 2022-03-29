@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import useLanguages from "../context/LanguageContext";
+import Footer from "./Footer";
 import LanguageButton from "./LanguageButton";
 import LeftBarIcons from "./LeftBarIcons";
 import RightEmail from "./RightEmail";
@@ -53,13 +54,20 @@ const Home = () => {
             area since 2016 (and almost 2 years with react) i was part in the
             past of`
               : `Ingeniero en informatica especializado en la construccion (y ocasionalmente diseño) de experiencias digitales excepcionales. Actualmente, vivo en Venezuela (moviendome a chile pronto). Estoy en el area de frontend desde 2016 (y casi 2 años con react) fui parte en el pasado de `}{" "}
-            <a className="external-link" href="https://croing.com/">
+            <a
+              className="external-link"
+              href="https://croing.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               croing
             </a>{" "}
             {language === "en" ? "an" : "un"}{" "}
             <a
               className="external-link"
               href="https://www.awwwards.com/sites/we-create-the-future-croing"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {language === "en"
                 ? "awwwards site."
@@ -82,6 +90,7 @@ const Home = () => {
         <LeftBarIcons />
         <RightEmail />
       </main>
+      <Footer />
     </>
   );
 };
