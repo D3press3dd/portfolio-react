@@ -4,7 +4,11 @@ const Footer = () => {
   const { language } = useLanguages();
   return (
     <footer id="footer">
-      <a href="#">
+      <a
+        href="https://github.com/D3press3dd"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {language === "en"
           ? `Designed & built by Anthony Rosman©`
           : `Diseñado y maquetado por © Anthony Rosman `}

@@ -1,0 +1,20 @@
+.contact-qr-container {
+  background-color: #000000e1;
+  display: none;
+  height: 100vh;
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  z-index: 10000;
+  align-items: center;
+
+  img {
+    margin: 50vh auto;
+  }
+}
+
+.contact-qr-container.is-close {
+  display: flex;
+}

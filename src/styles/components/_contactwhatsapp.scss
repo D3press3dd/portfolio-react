@@ -1,0 +1,35 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+  padding: 0 15rem;
+  text-align: center;
+  position: relative;
+}
+
+.contact-title {
+  font-size: 3.4rem;
+  font-family: "Teko", sans-serif;
+  font-weight: 700;
+  color: $red;
+}
+
+.contact-description {
+  color: $secondary-text;
+  font-size: 1.8rem;
+}
+
+.contact-image {
+  margin-top: 5rem;
+  width: 10%;
+  height: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+  //   filter: drop-shadow(0 0.5rem 0.5rem $red);
+}

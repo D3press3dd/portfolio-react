@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import useLanguages from "../context/LanguageContext";
 import { clientsLogos, herramientas } from "../data";
 import Clients from "./Clients";
+import ContactWhatsapp from "./ContactWhatsapp";
 import Footer from "./Footer";
 import LanguageButton from "./LanguageButton";
 import LeftBarIcons from "./LeftBarIcons";
@@ -12,7 +13,7 @@ const Home = () => {
 
   return (
     <>
-      <div>Quizas ponga un nav luego</div>
+      {/* <div>Quizas ponga un nav luego</div> */}
       <main className="home" id="home">
         <section className="information-container" id="information">
           <motion.h1
@@ -116,6 +117,8 @@ const Home = () => {
         }
         logo={herramientas}
       />
+
+      <ContactWhatsapp />
       <Footer />
     </>
   );
