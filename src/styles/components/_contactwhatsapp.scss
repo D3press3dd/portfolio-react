@@ -33,3 +33,31 @@
   }
   //   filter: drop-shadow(0 0.5rem 0.5rem $red);
 }
+
+@media (max-width: 640px) {
+  .contact-container {
+    padding: 0 8rem;
+  }
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-description {
+    font-size: 1.2rem;
+  }
+
+  .contact-image {
+    margin-top: 2rem;
+    width: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 0 5rem;
+  }
+
+  .contact-image {
+    width: 20%;
+  }
+}
