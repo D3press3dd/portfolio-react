@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import useLanguages from "../context/LanguageContext";
+import Clients from "./Clients";
 import Footer from "./Footer";
 import LanguageButton from "./LanguageButton";
 import LeftBarIcons from "./LeftBarIcons";
@@ -83,13 +84,14 @@ const Home = () => {
             animate={{ opacity: 1, translateX: 0 }}
             transition={{ type: "spring", duration: 0.7, delay: 0.5 }}
           >
-            {language === "en" ? "Resume" : "Resumen"}
+            {language === "en" ? "Download CV" : "Descargar CV"}
           </motion.a>
         </section>
         <LanguageButton />
         <LeftBarIcons />
         <RightEmail />
       </main>
+      <Clients />
       <Footer />
     </>
   );

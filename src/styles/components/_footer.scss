@@ -1,11 +1,14 @@
 footer {
+  margin-top: 5rem;
   align-items: center;
   display: flex;
   justify-content: center;
   padding: 2rem;
+  background-color: $red;
+  height: 9rem;
 
   a {
-    color: #acacac;
+    color: $main-text;
     font-family: "Roboto Condensed", "Teko", sans-serif;
     font-size: 1.6rem;
     font-weight: 500;
@@ -14,7 +17,7 @@ footer {
 
     &:after {
       content: "";
-      background: $red;
+      background: $background-color;
       display: block;
       height: 2px;
       opacity: 0;
@@ -24,7 +27,7 @@ footer {
     }
 
     &:hover {
-      color: $red;
+      color: $background-color;
 
       &::after {
         opacity: 1;

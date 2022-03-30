@@ -45,7 +45,7 @@
   border-radius: 0.5rem;
   box-shadow: #e9322f66 0px 2px 4px;
   transition: box-shadow 0.2s, color 0.2s ease-in-out;
-  margin-top: 5rem;
+  margin: 5rem 0;
 
   &:hover {
     box-shadow: #e9322f66 0px 7px 13px -3px, #e9322f33 0px -3px 0px inset;
@@ -121,6 +121,9 @@
 }
 
 @media (max-width: 470px) {
+  .btn {
+    font-size: 1.4rem;
+  }
   .information__name {
     font-size: 2rem;
   }
