@@ -29,7 +29,7 @@
   transition: all 0.3s ease;
 
   &:hover {
-    transform: scale(1.5);
+    transform: scale(1.5) !important;
   }
   //   filter: drop-shadow(0 0.5rem 0.5rem $red);
 }
