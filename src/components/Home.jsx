@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import useLanguages from "../context/LanguageContext";
+import { clientsLogos, herramientas } from "../data";
 import Clients from "./Clients";
 import Footer from "./Footer";
 import LanguageButton from "./LanguageButton";
@@ -13,7 +14,7 @@ const Home = () => {
     <>
       <div>Quizas ponga un nav luego</div>
       <main className="home" id="home">
-        <section className="information-container">
+        <section className="information-container" id="information">
           <motion.h1
             className="information__description"
             initial={{ opacity: 0, translateY: 20 }}
@@ -91,7 +92,30 @@ const Home = () => {
         <LeftBarIcons />
         <RightEmail />
       </main>
-      <Clients />
+      <Clients
+        id={"clients"}
+        titleEn={"Some of the clients I have worked with"}
+        titleEs={"Alguno de los clientes con los que he trabajado"}
+        descriptionEn={
+          "*The links redirect to the main page of the business, it has nothing to do with the project in which I worked"
+        }
+        descriptionEs={
+          "*Los enlaces redireccionan a la pagina principal del negocio, no tiene nada que ver con el proyecto en el que trabaje"
+        }
+        logo={clientsLogos}
+      />
+      <Clients
+        id={"skills"}
+        titleEn={"Skills and tools"}
+        titleEs={"Habilidades y herramientas"}
+        descriptionEn={
+          "Here are a few technologies and tools I’ve been using recently"
+        }
+        descriptionEs={
+          "Aquí hay algunas tecnologías y herramientas que he estado usando recientemente"
+        }
+        logo={herramientas}
+      />
       <Footer />
     </>
   );

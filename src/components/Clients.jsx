@@ -1,8 +1,15 @@
+/* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
 import useLanguages from "../context/LanguageContext";
-import { clientsLogos } from "../data";
 
-const Clients = () => {
+const Clients = ({
+  titleEn,
+  titleEs,
+  descriptionEn,
+  descriptionEs,
+  logo,
+  id,
+}) => {
   const { language } = useLanguages();
 
   return (
@@ -14,18 +21,14 @@ const Clients = () => {
         transition={{ type: "spring", duration: 0.7, delay: 0.5 }}
         viewport={{ once: true }}
       >
-        {language === "en"
-          ? "Some of the clients I have worked with"
-          : "Alguno de los clientes con los que he trabajado"}
+        {language === "en" ? titleEn : titleEs}
       </motion.h2>
-      <div className="clients-container">
+      <div className="clients-container" id={id}>
         <p className="clients-disclaimer">
-          {language === "en"
-            ? "*The links redirect to the main page of the business, it has nothing to do with the project in which I worked"
-            : "*Los enlaces redireccionan a la pagina principal del negocio, no tiene nada que ver con el proyecto en el que trabaje"}
+          {language === "en" ? descriptionEn : descriptionEs}
         </p>
         <div className="clients-grid">
-          {clientsLogos.map((client, index) => {
+          {logo.map((client, index) => {
             return (
               <motion.a
                 key={client.id + index}

@@ -93,6 +93,18 @@
   .clients-title {
     padding: 0 5rem;
   }
+
+  .clients-container {
+    gap: 3rem;
+  }
+
+  .clients-disclaimer {
+    font-size: 1.2rem;
+  }
+
+  .clients-title {
+    margin: 2rem 0;
+  }
 }
 
 @media (max-width: 330px) {
