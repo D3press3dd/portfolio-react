@@ -59,6 +59,7 @@
   gap: 2rem;
   position: fixed;
   right: 4rem;
+  z-index: 100000000;
 
   &::after {
     content: "";

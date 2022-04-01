@@ -53,10 +53,10 @@ const Home = () => {
             {language === "en"
               ? `I’m a computer engineer specializing in building (and occasionally
             designing) exceptional digital experiences. Currently, I’m living in
-            Venezuela (moving to chile soon).I have knowledge in the frontend
+            Venezuela (moving to Chile soon).I have knowledge in the frontend
             area since 2016 (and almost 2 years with react) i was part in the
             past of`
-              : `Ingeniero en informatica especializado en la construccion (y ocasionalmente diseño) de experiencias digitales excepcionales. Actualmente, vivo en Venezuela (moviendome a chile pronto). Estoy en el area de frontend desde 2016 (y casi 2 años con react) fui parte en el pasado de `}{" "}
+              : `Ingeniero en informatica especializado en la construccion (y ocasionalmente diseño) de experiencias digitales excepcionales. Actualmente, vivo en Venezuela (moviendome a Chile pronto). Estoy en el area de frontend desde 2016 (y casi 2 años con react) fui parte en el pasado de `}{" "}
             <a
               className="external-link"
               href="https://croing.com/"
