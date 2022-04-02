@@ -5,7 +5,7 @@
   Anthony Rosman- Portfolio
 </h1>
 <p align="center">
-  My <a href="https://portfolioanthonyrosman.netlify.app/" target="_blank"  color="#e9322f">portfolio</a> built with <a href="https://vitejs.dev/guide/#scaffolding-your-first-vite-project" target="_blank">pure react using vite</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify free</a>
+  My <a href="https://anthonyrosman.com/" target="_blank"  color="#e9322f">portfolio</a> built with <a href="https://vitejs.dev/guide/#scaffolding-your-first-vite-project" target="_blank">pure react using vite</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify free</a>
 </p>
 
 <p align="center">
