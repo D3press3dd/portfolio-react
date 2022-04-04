@@ -238,4 +238,108 @@ export const projects = [
     repository: "https://github.com/D3press3dd/portfolio-react#",
     technologies: ["React", "React Router", "Context API", "Sass"],
   },
+  {
+    id: "3",
+    name: "First Portfolio",
+    livePreview: "https://anthony-rosman.netlify.app/",
+    img: "https://github.com/D3press3dd/portfolio-react/blob/main/public/projects-img/primer-portfolio.png?raw=true",
+    alt: "Portfolio background",
+    description: {
+      en: {
+        desc: "My first portfolio using vanilla js and some libraries.",
+        list: [
+          "Design and construction of my first portfolio using vanilla js, ",
+          "adding cool animations with typed js and jquery",
+        ],
+      },
+      es: {
+        desc: "Mi primer portafolio usando vanilla js y algunas librerias externas.",
+        list: [
+          "Diseño y construccion de mi primer portafolio usando solo vanilla js, ",
+          "añadiendo animaciones interesantes con typed js y jquery",
+        ],
+      },
+    },
+
+    repository: "https://github.com/D3press3dd/Portfolio",
+    technologies: ["HTML", "CSS", "Javascript", "Typed.js"],
+  },
+  {
+    id: "4",
+    name: "Advice Generator",
+    livePreview: "https://advice-generator-app-anthonyrosman.netlify.app/",
+    img: "https://github.com/D3press3dd/portfolio-react/blob/main/public/projects-img/advice.png?raw=true",
+    alt: "Advice image",
+    description: {
+      en: {
+        desc: "Simple advice generator using advice slip api.",
+        list: [
+          "Solving a challenge on frontend mentor, ",
+          "doing an advice generator using the api",
+        ],
+      },
+      es: {
+        desc: 'Generador de consejos simple usando la api "advice-api".',
+        list: [
+          "Resolviendo un desafio de frontend mentor , ",
+          "haciendo un generador de consejos usando la api",
+        ],
+      },
+    },
+
+    repository: "https://github.com/D3press3dd/advice-generator-app",
+    technologies: ["HTML", "CSS", "Javascript", "Typed.js"],
+  },
+  {
+    id: "5",
+    name: "Social media dashboard with theme changer and custom toggle button",
+    livePreview: "https://social-dashboard-anthony-rosman.netlify.app/",
+    img: "https://github.com/D3press3dd/portfolio-react/blob/main/public/projects-img/social%20media.png?raw=true",
+    alt: "Social media dashboard image",
+    description: {
+      en: {
+        desc: "Social media dashboard on frontend mentor.",
+        list: [
+          "Solving a challenge on frontend mentor, ",
+          "doing a social media dashboard responsive with theme changer and a custom toggle button .",
+        ],
+      },
+      es: {
+        desc: "Panel de redes socials.",
+        list: [
+          "Resolviendo un desafio de frontend mentor , ",
+          "haciendo un panel de redes sociales totalmente responsive con cambio de tema y un boton personalizado para el cambio del mismo.",
+        ],
+      },
+    },
+
+    repository: "https://github.com/D3press3dd/social-media-dashboard",
+    technologies: ["React", "CSS", "Flexbox", "Grid"],
+  },
+  {
+    id: "6",
+    name: "Time Tracker",
+    livePreview: "https://time-tracker-react-anthonyrosman.netlify.app/",
+    img: "https://raw.githubusercontent.com/D3press3dd/portfolio-react/main/public/projects-img/time%20tracker.png",
+    alt: "Time tracker image",
+    description: {
+      en: {
+        desc: "Time tracker challenge on frontend mentor.",
+        list: [
+          "Solving a challenge on frontend mentor, ",
+          "doing and time tracker.",
+        ],
+      },
+      es: {
+        desc: "Rastreador de tiempo .",
+        list: [
+          "Resolviendo un desafio de frontend mentor , ",
+          "haciendo un rastreador de tiempo responsive",
+        ],
+      },
+    },
+
+    repository: "https://github.com/D3press3dd/time-tracker-responsive-react",
+    technologies: ["React", "CSS", "Flexbox", "Grid"],
+  },
 ];

@@ -33,9 +33,6 @@ const Projects = ({ project }) => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1.5, delay: id * 0.2 }}
         >
-          <div className="project-id">
-            <p>{id}</p>
-          </div>
           <div className="project-img">
             <a href={livePreview} target="_blank" rel="noreferrer noopener">
               <img className="project-img-complete" src={img} alt={alt} />
