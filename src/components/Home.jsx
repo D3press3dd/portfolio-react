@@ -6,6 +6,7 @@ import ContactWhatsapp from "./ContactWhatsapp";
 import Footer from "./Footer";
 import LanguageButton from "./LanguageButton";
 import LeftBarIcons from "./LeftBarIcons";
+import ProjectContainer from "./ProjectContainer";
 import RightEmail from "./RightEmail";
 
 const Home = () => {
@@ -117,6 +118,7 @@ const Home = () => {
         }
         logo={herramientas}
       />
+      <ProjectContainer />
 
       <ContactWhatsapp />
       <Footer />

@@ -177,3 +177,65 @@ export const herramientas = [
     img: vsCode,
   },
 ];
+
+export const projects = [
+  {
+    id: "1",
+    name: "Rest Countries App",
+    livePreview: "https://rest-countries-app-ar.netlify.app/",
+    img: "https://raw.githubusercontent.com/D3press3dd/portfolio-react/main/public/projects-img/rest-api-app.png",
+    alt: "Imagen about the rest api project",
+    description: {
+      en: {
+        desc: "A challenge that i did in frontend mentor using the REST Countries V2 API to pull country data and display it like in the designs.",
+        list: [
+          "See all countries from the API on the homepage, ",
+          "Search for a country using an input field, ",
+          "Filter countries by region, ",
+          "Click on a country to see more detailed information on a separate page, ",
+          "Toggle the color scheme between light and dark mode ",
+        ],
+      },
+      es: {
+        desc: "Un reto que hice en frontend mentor usando la API REST Countries V2 para extraer datos de los paises y mostrarlos en pantalla.",
+        list: [
+          "Ver todos los países de la API en la página de inicio",
+          "Buscar un país usando un campo de texto",
+          "Filtrar países por región",
+          "Ver información más detallada en una página separada acerca del pais seleccionado",
+          "Alternar el tema entre el modo claro y oscuro",
+        ],
+      },
+    },
+
+    repository: "https://github.com/D3press3dd/rest-countries-app-with-context",
+    technologies: ["React", "React Router", "Context API", "Sass"],
+  },
+
+  {
+    id: "2",
+    name: "Portfolio",
+    livePreview: "https://anthonyrosman.com/",
+    img: "https://raw.githubusercontent.com/D3press3dd/portfolio-react/main/public/projects-img/portfolio.png",
+    alt: "Portfolio background",
+    description: {
+      en: {
+        desc: "My portfolio using react with context to manage the language.",
+        list: [
+          "Design and construction of my portfolio using react, ",
+          "adding cool animations with framer motion",
+        ],
+      },
+      es: {
+        desc: "Mi portafolio usando react y context para manejar el cambio de idioma.",
+        list: [
+          "Diseño y construccion de mi portafolio usando react, ",
+          "añadiendo animaciones interesante con framer motion",
+        ],
+      },
+    },
+
+    repository: "https://github.com/D3press3dd/portfolio-react#",
+    technologies: ["React", "React Router", "Context API", "Sass"],
+  },
+];

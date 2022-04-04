@@ -57,7 +57,7 @@ const Description = () => {
     >
       <h2>
         {primeraFrase} <span className="description-text" ref={el}></span>{" "}
-        {language === "en" ? "from" : "de "}
+        {language === "en" ? "from " : "de "}
         Venezuela
       </h2>
     </motion.div>

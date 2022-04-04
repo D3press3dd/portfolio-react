@@ -1,0 +1,131 @@
+.project-intro {
+  margin: 0 5rem;
+  margin-top: 8rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  color: $background-color;
+  background-color: $red;
+}
+
+.project-container-all {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+
+  li {
+    list-style: none;
+  }
+}
+
+@media (min-width: 540px) {
+  .project-intro {
+    margin: 0rem 8rem;
+    margin-top: 4rem;
+    font-size: 2.4rem;
+  }
+
+  .project-name {
+    font-size: 1.6rem;
+  }
+
+  .project-technologies {
+    flex-direction: row;
+    gap: 2rem;
+
+    p {
+      background-color: $background-color;
+      padding: 0.5rem;
+      box-shadow: $dark-shadow;
+    }
+  }
+
+  .project-link-gap {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 864px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-container-all {
+    margin: 0 15rem;
+  }
+
+  .project-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 2rem 15rem;
+    position: relative;
+    width: 100%;
+    box-shadow: none;
+    align-items: center;
+  }
+
+  .project-intro {
+    margin: 4rem 15rem;
+    margin-top: 8rem;
+    font-size: 3.4rem;
+  }
+
+  .project-id {
+    font-size: 2.4rem;
+    top: 2rem;
+    left: 2rem;
+  }
+
+  .project-right {
+    position: absolute;
+    right: 0;
+    background-color: $red;
+    width: 50%;
+    box-shadow: $dark-shadow, $dark-shadow;
+  }
+
+  .project-img {
+    box-shadow: $dark-shadow, $dark-shadow;
+  }
+
+  .project-description {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-goal {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .icons-2 {
+    &:hover {
+      color: $background-color;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .project-container.project-order {
+    .project-right {
+      left: 0;
+    }
+
+    .project-left {
+      transform: translateX(67%);
+    }
+
+    .project-id {
+      text-align: end;
+    }
+  }
+}
