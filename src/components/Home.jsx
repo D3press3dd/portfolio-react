@@ -111,10 +111,10 @@ const Home = () => {
         titleEn={"Skills and tools"}
         titleEs={"Habilidades y herramientas"}
         descriptionEn={
-          "Here are a few technologies and tools I’ve been using recently"
+          "Here are a few technologies and tools I’ve been using recently. *Currently learning Next js."
         }
         descriptionEs={
-          "Aquí hay algunas tecnologías y herramientas que he estado usando recientemente"
+          "Aquí hay algunas tecnologías y herramientas que he estado usando recientemente. *Actualmente estoy aprendiendo Next js."
         }
         logo={herramientas}
       />
