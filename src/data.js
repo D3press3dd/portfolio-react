@@ -20,6 +20,7 @@ import sass from "./img/skill-logos/sass.png";
 import styled from "./img/skill-logos/styled.png";
 import vsCode from "./img/skill-logos/vs-code.png";
 import redux from "./img/skill-logos/redux.png";
+import typescript from "./img/skill-logos/typescript.png";
 
 export const data = {
   saludoEn: ["H", "I", ",", "I", "'", "M"],
@@ -141,8 +142,14 @@ export const herramientas = [
   {
     id: idGenerator,
     name: "Javascript",
-    link: "https://developer.mozilla.org/es/docs/Web/JavaScript",
+    link: "https://www.typescriptlang.org/",
     img: js,
+  },
+  {
+    id: idGenerator,
+    name: "Typescript",
+    link: "https://developer.mozilla.org/es/docs/Web/JavaScript",
+    img: typescript,
   },
   { id: idGenerator, name: "Sass", link: "https://sass-lang.com/", img: sass },
   {
