@@ -32,6 +32,7 @@ const Projects = ({ project }) => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1.5, delay: id * 0.2 }}
+          viewport={{ once: true }}
         >
           <div className="project-img">
             <a href={livePreview} target="_blank" rel="noreferrer noopener">
@@ -45,6 +46,7 @@ const Projects = ({ project }) => {
           initial={{ opacity: 0, translateX: -100 }}
           whileInView={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 0.5, delay: id * 0.2 }}
+          viewport={{ once: true }}
         >
           <div className="project-name">
             <p>{language === "en" ? "Project" : "Proyecto"}</p>
@@ -77,6 +79,7 @@ const Projects = ({ project }) => {
                       duration: 0.5,
                       delay: 0.5 + index * 0.2,
                     }}
+                    viewport={{ once: true }}
                   >
                     {"#" + item}
                   </motion.p>

@@ -12,6 +12,7 @@ const ProjectContainer = () => {
         initial={{ opacity: 0, translateY: 20 }}
         whileInView={{ opacity: 1, translateY: 0 }}
         transition={{ duration: 1 }}
+        viewport={{ once: true }}
       >
         {language === "en"
           ? "Some Things I’ve Built"

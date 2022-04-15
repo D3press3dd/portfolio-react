@@ -37,6 +37,7 @@ const Clients = ({
                 rel="noopener noreferrer"
                 className="clients-link"
                 whileHover={{ translateY: -10 }}
+                viewport={{ once: true }}
               >
                 <motion.img
                   className="clients-img"
@@ -49,6 +50,7 @@ const Clients = ({
                     translateY: 0,
                   }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
                 />
               </motion.a>
             );
