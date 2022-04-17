@@ -1,5 +1,5 @@
 import { FaLinkedinIn } from "react-icons/fa";
-import { FiGithub, FiCodepen } from "react-icons/fi";
+import { FiGithub, FiCodepen, FiTwitter } from "react-icons/fi";
 import { SiCodewars, SiFreelancer } from "react-icons/si";
 import { IconContext } from "react-icons";
 import { motion } from "framer-motion";
@@ -88,6 +88,21 @@ const LeftBarIcons = () => {
               rel="noopener noreferrer"
             >
               <FiCodepen />
+            </a>{" "}
+          </motion.li>
+
+          <motion.li
+            initial={{ opacity: 0, translateX: -100 }}
+            animate={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 0.3, delay: 0.8 }}
+          >
+            {" "}
+            <a
+              href="https://twitter.com/AnthonyRosman"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FiTwitter />
             </a>{" "}
           </motion.li>
         </ul>
