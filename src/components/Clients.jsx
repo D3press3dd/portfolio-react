@@ -49,7 +49,7 @@ const Clients = ({
                     opacity: 1,
                     translateY: 0,
                   }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  transition={{ duration: 0.2, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 />
               </motion.a>
