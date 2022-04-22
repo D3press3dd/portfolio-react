@@ -1,6 +1,6 @@
 import useLanguages from "../context/LanguageContext";
 import usaFlag from "../img/usa-flag.svg";
-import spainFlag from "../img/spain-flag.svg";
+import spainFlag from "../img/spain-flag.png";
 import { motion } from "framer-motion";
 motion;
 
