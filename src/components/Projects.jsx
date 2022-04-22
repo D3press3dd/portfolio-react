@@ -36,7 +36,12 @@ const Projects = ({ project }) => {
         >
           <div className="project-img">
             <a href={livePreview} target="_blank" rel="noreferrer noopener">
-              <img className="project-img-complete" src={img} alt={alt} />
+              <img
+                loading="lazy"
+                className="project-img-complete"
+                src={img}
+                alt={alt}
+              />
             </a>
           </div>
         </motion.div>

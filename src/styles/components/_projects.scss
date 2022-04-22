@@ -11,6 +11,10 @@
 .project-img {
   position: relative;
 
+  img {
+    width: 100%;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -63,6 +67,10 @@
 .project-technologies {
   display: flex;
   flex-direction: column;
+}
+
+.project-img-complete {
+  object-fit: cover;
 }
 
 .icons-2 {
