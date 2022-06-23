@@ -42,7 +42,11 @@
   padding: 1rem;
   overflow: hidden;
   margin: 0 auto;
+  width: 100%;
+  
   transition: box-shadow 0.3s ease-in-out;
+
+  
 
   &:hover {
     box-shadow: $dark-shadow;

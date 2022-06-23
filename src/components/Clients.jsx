@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import { motion } from "framer-motion";
-import useLanguages from "../context/LanguageContext";
+import { motion } from 'framer-motion';
+import useLanguages from '../context/LanguageContext';
 
 const Clients = ({
   titleEn,
@@ -18,14 +18,14 @@ const Clients = ({
         className="clients-title"
         initial={{ opacity: 0, translateY: 50 }}
         whileInView={{ opacity: 1, translateY: 0 }}
-        transition={{ type: "spring", duration: 0.7, delay: 0.5 }}
+        transition={{ type: 'spring', duration: 0.7, delay: 0.5 }}
         viewport={{ once: true }}
       >
-        {language === "en" ? titleEn : titleEs}
+        {language === 'en' ? titleEn : titleEs}
       </motion.h2>
       <div className="clients-container" id={id}>
         <p className="clients-disclaimer">
-          {language === "en" ? descriptionEn : descriptionEs}
+          {language === 'en' ? descriptionEn : descriptionEs}
         </p>
         <div className="clients-grid">
           {logo.map((client, index) => {
